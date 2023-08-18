@@ -1,0 +1,225 @@
+.video-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 16px ;
+    row-gap: 42px ;
+}
+
+@media (max-width:750px) {
+
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width:749px) and (max-width: 999px) {
+
+    .video-grid {
+
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media (min-width:1000px ) and (max-width: 1299px ) {
+
+    .video-grid {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+}
+
+
+
+@media (min-width: 1300px) {
+
+    .video-grid{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.video-info-grid {
+
+    display:grid ;
+    grid-template-columns: 48px 1fr;
+}
+
+.thumbnail-div {
+
+    position: relative ;
+
+}
+
+.time-stamp {
+
+    position: absolute ;
+    bottom: 19px ;
+    right: 4px ;
+    background-color: black;
+    color:white;
+    
+    font-size: 12px ;
+    font-weight: 500 ;
+    padding-left: 4px ;
+    padding-right: 4px ;
+    padding-top: 2px ;
+    padding-bottom: 2px ;
+    border-radius: 2px ;
+    line-height: 18px ;
+}
+
+.thumbnail {
+
+    width: 100% ;
+    margin-bottom: 8px ;
+    cursor: pointer ;
+}
+
+    
+.profile-picture {
+
+    width: 75% ;
+    border-radius: 25px ;
+    cursor: pointer ;
+    
+}
+  
+.video-title  {
+
+    margin-bottom: 9.5px ;
+    font-size: 14px ;
+    font-weight: 500;
+    line-height: 20px ;
+    cursor: pointer ;
+}
+
+@media only screen and (min-width:1000px ) and (max-width: 1299px ) {
+
+    .video-title{
+
+        font-size: 16px ;
+        line-height: 24px ;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .video-title{
+
+        font-size: 17px ;
+        line-height: 25px ;
+    }
+
+}
+
+.video-author,
+.video-info {
+
+        
+    font-size: 12px ;
+    color: rgb(96, 96, 96);
+
+}
+
+@media only screen and (min-width:1000px ) and (max-width: 1299px ) {
+
+    .video-author,
+    .video-info {
+        
+        font-size: 14px ;
+    
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .video-author,
+    .video-info {
+        
+        font-size: 15px ;
+    
+    }
+}
+
+.video-author {
+
+    margin-bottom: 4px ;
+    cursor: pointer ;
+}
+
+.link-text {
+
+    color: black;
+    text-decoration: none ;
+
+}
+
+.pop-up-div {
+
+    position: relative ;
+    display: inline-block ;
+   
+}
+
+.pop-up-sub-div {
+
+    position: absolute ;
+    bottom: -80px ;
+    display: flex ;
+    z-index: 2 ;
+    background-color: white;
+    white-space: nowrap ;
+    align-items: center;
+    
+    border-radius: 7px ;
+    
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 15px ;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .3) ; 
+    opacity: 0;
+
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+
+
+.pop-up-div:hover .pop-up-sub-div{
+
+    opacity: 1 ;
+}
+
+.pop-up-img {
+
+    width: 50px ;
+    border-radius: 50px ;
+    
+}
+
+.pop-up-text {
+
+    margin-left: 8px ;
+
+}
+
+.pop-up-name {
+
+    font-size: 14px ;
+    font-weight: 700 ;
+    margin-bottom: 3px ;
+}
+
+.pop-up-subscribers {
+
+    font-size: 12px ;
+    color: rgb(72, 72, 72);
+
+}
